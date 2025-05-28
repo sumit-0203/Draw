@@ -1,0 +1,86 @@
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+}
+.canvas {
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color:#F8F4EC;
+}
+
+.top,
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.block,
+input,
+select,
+button {
+    width: 80%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom>button {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.top>.block {
+    margin: 10px;
+}
+
+.block>p {
+    margin: 10px auto;
+    width: 50%;
+}
+
+.block>input  {
+    background-color: #BFD8AF;
+}
+
+.custom-range {
+    appearance: none;
+    width: 100%;
+    height: 12px;
+    background: black;
+    border-radius: 20px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin: 5px 0;
+}
+
+.block>.custom-range:hover {
+    opacity: 1;
+}
+
+.block>.custom-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+.block>.custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
