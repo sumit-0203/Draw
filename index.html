@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Draw</title>
+    <title>Canvas-Draw By Sumit</title>
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./draw.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="webside icon" type="png" href="logo.png">
 </head>
 
-<body style="background-color: #BFD8AF;">
+<body style="background-color: #7bddce;">
+    <nav id="nav">
+        <p id="p" title="Detail Of Developer" >About Developer :-</p>
+        <a title="Linkedin Profile" class="a" href="https://www.linkedin.com/in/sumit-meher?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><div class="item"><i class="fa-brands fa-linkedin"></i> sumit-meher</div></a>
+        <a title="Twitter Profile" class="a" href="https://x.com/sumit__2005?s=09"><div class="item"><i class="fa-brands fa-twitter"></i> Sumit Meher</div></a>
+        <a title="Instagram Profile" class="a" href="https://www.instagram.com/sumit_02.03?igsh=eHhlZTRrMjVnYnFz"><div class="item"><i class="fa-brands fa-instagram"></i> Sumit Meher</div></a>
+    </nav>
     <div class="main">
-        <h1>Canvas-Draw</h1>
+        <h3 title="Heading">Canvas-Draw</h3>
         <div class="top">
             <div class="block">
-                <p><b>Ink color</b></p>
+                <p class="p">Ink color</p>
                 <input class="form-control" type="color" id="colorPicker">
             </div>
             <div class="block">
-                <p><b>Sheet color</b></p>
+                <p class="p">Sheet color</p>
                 <input class="form-control" type="color" id="canvasColor">
             </div>
             <div class="block">
-                <p><b>Brush size</b></p>
+                <p class="p">Brush size</p>
                 <input type="range" class="custom-range" id="fontSizePicker" min="5" max="50" value="5" step="1">
             </div>
         </div>
-
-        <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+        <canvas class="canvas" id="myCanvas" width="700" height="360"></canvas>
 
         <div class="bottom">
-            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
-            <button type="button" class="btn btn-success" id="saveButton">Save & download</button>
-            <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve last saved</button>
+            <button title="Clear Content" type="button" class="btn btn-danger" id="clearButton">Clear</button>
+            <button title="Save A Copy" type="button" class="btn btn-success" id="saveButton">Save & download</button>
+            <button title="See Your Last Save" type="button" class="btn btn-warning" id="retrieveButton">Retrieve last saved</button>
         </div>
     </div>
     <script src="./draw.js"></script>

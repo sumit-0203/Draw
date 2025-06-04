@@ -17,7 +17,7 @@ ctx.strokeStyle = event.target.value;
 
 canvasColor.addEventListener('change', (event) => {
     ctx.fillStyle = event.target.value;
-    ctx.fillRect(0, 0, 800, 500);
+    ctx.fillRect(0, 0, 700, 360);
 });
 
 // start drawing using mouse

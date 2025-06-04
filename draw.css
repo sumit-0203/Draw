@@ -1,55 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    height:30px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item{
+    height: 30px;
+    width: 160px;
+}
+.a{ top: 0;
+    left: 0;
+    text-decoration: none;
+    color:rgb(191, 190, 190);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: 1s;
+    transition-property: all;
+}
+.a:hover{
+    color: aqua;
+    /* transition: 40px 2s ease-in-out 0.25; */
+    border-bottom: 4px solid aqua;
+    border-radius: 15px;
+    font-size: 23px;
+    transition: .4s;
+    text-decoration: none;   
+    /* transform: scale(1) translateY(0); */
+}
+#p{
+    text-decoration: none;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    transition: 1s;
+    transition-property: all;
+}
+#p:hover{
+    cursor: none;
+    color: rgb(190, 222, 222);
+    border-radius: 15px;
+    font-size: 25px;
+    transition: .4s;  
+}
 .main {
+    margin-top: 20px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-h1 {
+h3 {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: none;
+    text-transform: uppercase;
 }
 .canvas {
     border: 5px solid black;
     border-radius: 20px;
     background-color:#F8F4EC;
 }
-
-.top,
 .bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 0 20px 0;
+    margin-top: 20px;
 }
-
-.block,
-input,
-select,
-button {
+.btn{
     width: 80%;
 }
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+.block{
+    height: 70px;
+    width: 50%;
+}
+select{
+    width: 80%;
+}
 .column {
     display: flex;
     flex-direction: column;
-}
+    justify-content: space-between;
 
+}
 .bottom>button {
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
     border-radius: 10px;
 }
-
-.top>.block {
-    margin: 10px;
+.p{
+    cursor: none;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.block>p {
-    margin: 10px auto;
-    width: 50%;
+.form-control{
+    margin: 0;
+    padding: 0;
 }
-
 .block>input  {
-    background-color: #BFD8AF;
+    background-color: #7bddce;
+    border: #7bddce;
 }
 
 .custom-range {
